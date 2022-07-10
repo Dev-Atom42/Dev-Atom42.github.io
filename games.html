@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Игры и приложения</title>
+<meta name="description" content="Atom42 GAMES">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/A42G.css" rel="stylesheet">
+<link href="css/games.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#welcome']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#endp']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
+      });
+      $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+      $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
+      {
+         if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+         {
+            $(this).collapse('hide');
+         }
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+   });
+</script>
+</head>
+<body>
+   <div id="container">
+   </div>
+   <div id="wb_navigation">
+      <div id="navigation">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_navigationMenu" style="display:inline-block;width:100%;text-align:center;z-index:0;">
+                  <div id="navigationMenu" class="navigationMenu" style="width:100%;height:auto !important;">
+                     <div class="container">
+                        <a id="navigationMenu-logo" href="#"><img alt="Atom42 GAMES" title="Atom42 GAMES" src="images/Atom42_GAMES_RU.png" width="224" height="41"></a>
+                        <div class="navbar-header">
+                           <button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigationMenu-navbar-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                           </button>
+                        </div>
+                        <div class="navigationMenu-navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                 <a href="./index.html" class="nav-link btn">Главная</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <div class="btn-group">
+                                    <a href="./games.html" title="Игры и приложения созданные Atom42" class="nav-link btn">Игры</a>
+                                    <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                       <li class="nav-item dropdown-item">
+                                          <a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" class="nav-link">Swisstale TE (DEMO)</a>
+                                       </li>
+                                       <li class="nav-item dropdown-item">
+                                          <a href="https://dev-atom42.github.io/Flappy-Switz/" class="nav-link">Flappy Switz</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="./about.html" class="nav-link btn">О Atom42 GAMES</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="./helpme.html" class="nav-link btn">Помочь разработчику</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_welcome">
+      <div id="welcome">
+         <div class="col-1">
+            <div id="wb_Text3">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:53px;">Игры и приложения от </span><span style="color:#FF4500;font-family:'Fixedsys Excelsior';font-size:53px;">Atom42 GAMES</span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:53px;">!</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer2">
+      <div id="wb_Text2" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Основной проект (на данный момент)</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="col-1">
+            <div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:3;">
+               <img src="images/Swisstale2022ICON.png" id="Image1" alt="" width="210" height="210">
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text4">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Swisstale Trash Edition (в разработке)<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Swisstale TE является первой в мире полноценной Undertale AU (альтернативной вселенной) на Android. В ней повествуется легенда про короля Швейцария, который отправился в подземелье горы Швейцарских наслаждений, чтобы спасти свой народ и одолеть своего заклятого врага лорда Некита. На мобильные устройства игра вышла 8 сентября 2018 года. Подробнее...</span>
+            </div>
+            <div id="wb_ThemeableButton1" style="display:inline-block;width:100%;z-index:5;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton1" href="https://play.google.com/store/apps/details?id=com.reysinc.ste" style="width:100%;height:100%;">Скачать в Google Play<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_ThemeableButton6" style="display:inline-block;width:100%;z-index:6;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton6" href="https://play.google.com/store/apps/details?id=en.a42g.ste" target="_blank" style="width:100%;height:100%;">Скачать английскую версию<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_ThemeableButton2" style="display:inline-block;width:100%;z-index:7;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton2" href="" style="width:100%;height:100%;">Сыграть в веб версию игры (DEMO)<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer1">
+      <div id="wb_Text1" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Остальные проекты</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2">
+         <div class="col-1">
+            <div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:9;">
+               <img src="images/flappy-switz-icon.png" id="Image2" alt="" width="210" height="210">
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text6">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Flappy Switz TE (отменён)<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Данная игра является предысторией к Swisstale TE. Геймлейно схожа с Flappy Bird (Этой игрой в общем Flappy Switz и вдохновлена). Швейцарию захотелось камень &quot;монолит&quot; и он отправился в Королевство Лорда Некита, на своём частном самолёте. Он проникает в Чернобыль, где его встречает Сидорович, Швейцарий взбесившись убивает его. Дальше он отправляется в поиски &quot;монолита&quot;. Спустя час, Швейцарий находит этот камень и начинает желать, чтобы он переместился на один из островов Королевства Швейцария. И тут же Швейцарий не успевает загадать его, как перед ним появляется Лорд Некит и он посылает военных, чтобы они грохнули Швейцария. Он быстро убегает, и садится в свой самолёт и улетает обратно в Швейцарию. Но не все шансы потеряны и вы должны помочь королю выполнить его задание.</span>
+            </div>
+            <div id="wb_ThemeableButton3" style="display:inline-block;width:100%;z-index:11;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton3" href="" style="width:100%;height:100%;">Скачать с облака<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_ThemeableButton4" style="display:inline-block;width:100%;z-index:12;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton4" href="" style="width:100%;height:100%;">Сыграть в веб версию игры<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid4">
+      <div id="LayoutGrid4">
+         <div class="col-1">
+            <div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:13;">
+               <img src="images/simulatorlife42.png" id="Image4" alt="" width="210" height="210">
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text8">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Симулятор жизни (заморожен)<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Первая из &quot;не простеньких&quot; игр. Ваша цель из бедняка стать богатым человеком. На данный момент она заморожена. Возможность загрузить так же временно отсутствует.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid5">
+      <div id="LayoutGrid5">
+         <div class="col-1">
+            <div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:15;">
+               <img src="images/pianolite.png" id="Image5" alt="" width="210" height="210">
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text9">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Piano (отменён)<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Приложение весящее килобайты. Оно отменено по причине не надобности и наличия множества аналогов на просторе Google Play (хоть и размером больше).</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer3">
+      <div id="wb_Text5" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Совместные игры или игры в которых Atom42 GAMES выступает в качестве &quot;издателя&quot;</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3">
+         <div class="col-1">
+            <div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:18;">
+               <img src="images/dstale.png" id="Image3" alt="" width="210" height="210">
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text7">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Darkstartale: Ilya vs Jack<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Данная игра основана на движке другой игры (Swisstale TE), а также является дополнением к Swisstale TE и Darkstartale. Это почти тот же Swisstale TE, поскольку используются та же система битв, что и в Swisstale TE, но помимо этого обладает новыми функциями и примочками, а также здесь происходит событие из Darkstartale (битва Ильи и Джека). В игре есть возможность выбрать сложность игры (чего нет в Swisstale TE). Но не смотря на это сложность отвечает только за то, сколько ты будешь получать урона, при столкновении с атаками противника.</span>
+            </div>
+            <div id="wb_ThemeableButton5" style="display:inline-block;width:100%;z-index:20;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton5" href="https://play.google.com/store/apps/details?id=com.darkstar.dstaleiliyavsjack" target="_blank" style="width:100%;height:100%;">Скачать в Google Play<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer4">
+      <div id="wb_Text10" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Раннее творчество</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid6">
+      <div id="LayoutGrid6">
+         <div class="col-1">
+            <div id="wb_Text11">
+               <span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:21px;">Хотите ознакомится с более ранними проектами? Нажимайте сюда!</span>
+            </div>
+         </div>
+         <div class="col-2">
+         </div>
+      </div>
+   </div>
+   <div id="wb_endp">
+      <div id="endp">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_footer">
+                  <div id="footer">
+                     <div class="col-1">
+                        <div id="wb_footerText">
+                           <p style="font-size:13px;line-height:16px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:28;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:25;">
+         <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+   </div>
+</body>
+</html>
