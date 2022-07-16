@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Fixedsys Excelsior';
+    src: url('fonts/FSEX302.TTF')  format('truetype');
+    font-style: normal;
+}
 div#container
 {
    width: 970px;
@@ -863,7 +868,7 @@ input:focus, textarea:focus, select:focus
    margin-left: auto;
    max-width: 1024px;
 }
-#LayoutGrid6 > .col-1, #LayoutGrid6 > .col-2
+#LayoutGrid6 > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -872,7 +877,7 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid6 > .col-1, #LayoutGrid6 > .col-2
+#LayoutGrid6 > .col-1
 {
    -webkit-flex: 0 0 auto;
    flex: 0 0 auto;
@@ -899,33 +904,9 @@ input:focus, textarea:focus, select:focus
    justify-content: center;
    text-align: center;
 }
-#LayoutGrid6 > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   display: none;
-   -webkit-flex-basis: 0;
-   flex-basis: 0;
-   max-width: 0;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-   text-align: right;
-}
 @media (max-width: 640px)
 {
-#LayoutGrid6 > .col-1, #LayoutGrid6 > .col-2
+#LayoutGrid6 > .col-1
 {
    -webkit-flex-basis: 100% !important;
    flex-basis: 100% !important;
