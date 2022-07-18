@@ -5,16 +5,17 @@
 <title>Swisstale TE</title>
 <meta name="description" content="Atom42 GAMES">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="ste.ico" rel="shortcut icon" type="image/x-icon">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/A42G.css" rel="stylesheet">
 <link href="css/swisstale-te.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/skrollr.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/util.min.js"></script>
 <script src="js/collapse.min.js"></script>
 <script src="js/dropdown.min.js"></script>
-<script src="js/skrollr.min.js"></script>
 <script>   
    $(document).ready(function()
    {
@@ -22,6 +23,26 @@
       {
          event.preventDefault();
          $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid5']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid3']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid6']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid7']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'easeOutCubic');
       });
       $("a[href*='#LayoutGrid1']").click(function(event)
       {
@@ -38,6 +59,11 @@
          event.preventDefault();
          $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
       });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
       $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
       $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
       {
@@ -46,11 +72,6 @@
             $(this).collapse('hide');
          }
       });
-      function skrollrInit()
-      {
-         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
-      }
-      skrollrInit();
    });
 </script>
 <link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
@@ -76,27 +97,27 @@
                         <div class="navigationMenu-navbar-collapse collapse">
                            <ul class="nav navbar-nav">
                               <li class="nav-item">
-                                 <a href="./index.html" class="nav-link btn">Главная</a>
+                                 <a href="./index.html" title="Главная" class="nav-link btn">Главная</a>
                               </li>
                               <li class="nav-item dropdown">
                                  <div class="btn-group">
-                                    <a href="./games.html" title="Игры и приложения созданные Atom42" class="nav-link btn">Игры</a>
+                                    <a href="./games.html" title="Игры" class="nav-link btn">Игры</a>
                                     <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                        <li class="nav-item dropdown-item">
-                                          <a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" class="nav-link">Swisstale TE (DEMO)</a>
+                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link">Swisstale TE (DEMO)</a>
                                        </li>
                                        <li class="nav-item dropdown-item">
-                                          <a href="https://dev-atom42.github.io/Flappy-Switz/" class="nav-link">Flappy Switz</a>
+                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link">Flappy Switz TE</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
                               <li class="nav-item">
-                                 <a href="./about.html" class="nav-link btn">О Atom42 GAMES</a>
+                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn">О Atom42 GAMES</a>
                               </li>
                               <li class="nav-item">
-                                 <a href="./helpme.html" class="nav-link btn">Помочь разработчику</a>
+                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn">Помочь разработчику</a>
                               </li>
                            </ul>
                         </div>
@@ -110,13 +131,76 @@
    <div id="wb_LayoutGrid4">
       <div id="LayoutGrid4">
          <div class="col-1">
-            <div id="wb_Text8">
-               <span style="color:#FF0000;font-family:'Fixedsys Excelsior';font-size:53px;">Помочь разработчику</span>
-            </div>
-            <div id="wb_Text9">
-               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">в разработке<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">в разработке</span>
+            <div id="wb_Image1">
+               <img src="images/ste_logo.png" id="Image1" alt="" width="940" height="187">
             </div>
          </div>
+      </div>
+   </div>
+   <div id="FlexContainer3">
+      <div id="wb_Text6" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Трейлер игры</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid5">
+      <div id="LayoutGrid5">
+         <div class="col-1">
+            <div id="wb_YouTube1">
+               <iframe id="YouTube1" src="https://www.youtube.com/embed/qxaR9PGYY14?rel=0&amp;autohide=0"></iframe>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer4">
+      <div id="wb_Text10" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">О игре</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3">
+         <div class="col-1">
+            <div id="wb_Text3">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Swisstale TE является первой в мире полноценной Undertale AU (альтернативной вселенной) на Android. Первая альфа версия игры появилась в августе 2018 года. На мобильные устройствах игра вышла в качестве беты 8 сентября 2018 года. Создавалась игра просто в качестве изучения нового движка. Возможно разработка игры прекратилась бы и на первой версии, но игре повезло и на неё обратили внимание. С тех пор как пошли загрузки и негативные отзывы, стало ясно, что игру нужно развивать дальше. Это дало на самом деле много мотивации, а негативные отзывы в то время оправданы. В игре была только битва с Лордом Некитом и локация, которая была набросана за 2 минуты. И начиная со второй половины сентября обновления стали выходить практически каждую неделю. Игра развивалась и именно с этого периода у игры начался огромный рост и это было до тех пор, пока обновления игры не стали выходить редко, сначала месяц ожидания обновления, а затем ещё больше. В итоге игра сейчас практически стоит на месте. Но не смотря на сложную судьбу игры, можно считать, что Swisstale TE - это ещё не только самая первая AU на телефонах, но ещё и первый хорошо удавшийся проект у Atom42 GAMES (количество загрузок за 2018-2019 год тому подтверждение).</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer5">
+      <div id="wb_Text7" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Сюжет (предыстория игры)</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid6">
+      <div id="LayoutGrid6">
+         <div class="col-1">
+            <div id="wb_Text8">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Сюжетно игра продолжает события игры Flappy Switz. В ней повествуется легенда/сказка про Короля Швейцария, который отправился в подземелье горы Швейцарских Наслаждений с целью спасти свой народ от своей же совершённой ошибки. А всё началось с того, что спустя 5 лет после событий Flappy Switz Швейцарий находит камень Монолит и желает, чтобы все вражеские страны поместились в подземелье горы Швейцарских Наслаждений. Камень повторно исполняет желание не так, как нужно Швейцарию и вместе с вражескими странами в это подземелье попало большинство Швейцарского народа.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer6">
+      <div id="wb_Text9" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Почему именно Swisstale TE, а не просто Swisstale?</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid7">
+      <div id="LayoutGrid7">
+         <div class="col-1">
+            <div id="wb_Text11">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">1. Приписка TE (Trash Edition) переводится как &quot;Мусорное Издание&quot;. Это уже даёт понять, что игра выполнена в трешовом стиле. В этом издании много низкопробных текстур и спрайтов. При этом в стравнении с другими играми в Swisstale TE баги исправляются (по возможности) и не считаются элементом, которые характеризуют трэшовость игры.<br> <br>2. Как было упомянуто <a href="./swisstale-te.html#LayoutGrid3">выше</a> игра создавалась всего лишь в качестве изучения нового для разработчика движка. Поэтому Swisstale TE является так же полигоном для тестирования многих фишек (кстати по этой же причине становится ясно почему во время прохождения игры, она становится всё лучше и лучше по сравнению с началом).<br><br>3. Swisstale - это полностью оригинальная задумка, которая уже не имеет практически никакого отношения к Undertale, но при этом стоит учитывать, что Swisstale вдохновлён Undertale (Примерно так же как Undertale вдохновлён Earthbound). Swisstale TE же наоборот, является трэшовой пародией на Undertale, но при этом со своей вселенной.<br><br>4. Swisstale на данный момент ещё не существует. Он находится пока что ещё в задумках автора. Swisstale планируется как первая большая нормальная игра, в которой есть всё о чём мечтает разработчик. Для приобретений навыков в разработке помогает всё та же Swisstale TE. Поэтому когда всё же выйдет Swisstale, это будет уже не трэшовая игра, а довольно адекватная, показывающая пороки общества и путь к их исправлению.<br><br>5. При этом стоит учитывать, что сюжетно Swisstale и Swisstale TE будут в чём-то отличаться, но их сюжетная основа останется той же. Так что сюжет игры Swisstale для игроков Swisstale TE будет хорошо узнаваться. Так же сюжет этих игр будет отличать наличие трэшовости, адекватности, что было как раз сказано в 4 пункте.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer2">
+      <div id="wb_Text5" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">Веб-версия игры</span>
+      </div>
+   </div>
+   <div id="FlexContainer1">
+      <div id="wb_Text4" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">ВНИМАНИЕ!!! На данный момент браузерная версия игры очень сырая и в ней практически ничего нет! Так что советую сыграть в <a href="https://play.google.com/store/apps/details?id=com.reysinc.ste">мобильную версию</a> игры. Но кто всё же желает опробовать веб-версию, то вы может это сделать ниже. (Управление: ЛКМ/касание по экрану, стрелочки, клавиша Z)</span>
       </div>
    </div>
    <div id="wb_LayoutGrid1">
@@ -124,7 +208,7 @@
          <div class="col-1">
             <iframe name="steonline" id="InlineFrame1" src="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" scrolling="no"></iframe>
             <div id="wb_Text2">
-               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/">Запустить игру в полном экране</a></span>
+               <span style="background-color:#FFFFFF;color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:21px;"><a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" target="_blank">Запустить игру в полном экране</a></span>
             </div>
          </div>
       </div>
@@ -133,7 +217,7 @@
       <div id="LayoutGrid2">
          <div class="col-1">
             <div id="wb_Text1">
-               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;"><a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/">Запустить веб-версию игры</a></span>
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;"><a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" target="_blank">Запустить веб-версию игры</a></span>
             </div>
          </div>
       </div>
@@ -145,8 +229,8 @@
                <div id="wb_footer">
                   <div id="footer">
                      <div class="col-1">
-                        <div id="wb_footerText">
-                           <p style="font-size:13px;line-height:16px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</p>
+                        <div id="wb_Text12">
+                           <span style="color:#D3D3D3;font-family:'Fixedsys Excelsior';font-size:17px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES" target="_blank">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt" target="_blank">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</span>
                         </div>
                      </div>
                   </div>

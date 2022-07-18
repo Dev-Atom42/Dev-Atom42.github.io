@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flappy Switz</title>
+<meta name="description" content="Atom42 GAMES">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="proletarian.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/A42G.css" rel="stylesheet">
+<link href="css/flappy-switz-te.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#LayoutGrid4']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid2']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#endp']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+      $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+      $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
+      {
+         if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+         {
+            $(this).collapse('hide');
+         }
+      });
+   });
+</script>
+<link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
+</head>
+<body>
+   <div id="container">
+   </div>
+   <div id="wb_navigation">
+      <div id="navigation">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_navigationMenu">
+                  <div id="navigationMenu" class="navigationMenu" style="width:100%;height:auto !important;">
+                     <div class="container">
+                        <a id="navigationMenu-logo" href="#"><img alt="Atom42 GAMES" title="Atom42 GAMES" src="images/Atom42_GAMES_RU.png" width="224" height="41"></a>
+                        <div class="navbar-header">
+                           <button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigationMenu-navbar-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                           </button>
+                        </div>
+                        <div class="navigationMenu-navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                 <a href="./index.html" title="Главная" class="nav-link btn">Главная</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <div class="btn-group">
+                                    <a href="./games.html" title="Игры" class="nav-link btn">Игры</a>
+                                    <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                       <li class="nav-item dropdown-item">
+                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link">Swisstale TE (DEMO)</a>
+                                       </li>
+                                       <li class="nav-item dropdown-item">
+                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link">Flappy Switz TE</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn">О Atom42 GAMES</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn">Помочь разработчику</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid4">
+      <div id="LayoutGrid4">
+         <div class="col-1">
+            <div id="wb_Text7" class="style1">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:48px;">Flappy Switz TE</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer1">
+      <div id="wb_Text4" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Управлять персонажем в этой браузерной мини-игре вы можете несколькими способами:<br>Пробел/ЛКМ/Стрелка вверх/Касание по экрану</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="col-1">
+            <iframe name="steonline" id="InlineFrame1" src="https://dev-atom42.github.io/Flappy-Switz" scrolling="no"></iframe>
+            <div id="wb_Text2">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:21px;"><a href="https://dev-atom42.github.io/Flappy-Switz" target="_blank">Запустить игру в полном экране</a></span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2">
+         <div class="col-1">
+            <div id="wb_Text1">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;"><a href="https://dev-atom42.github.io/Flappy-Switz" target="_blank">Запустить веб-версию игры</a></span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_endp">
+      <div id="endp">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_footer">
+                  <div id="footer">
+                     <div class="col-1">
+                        <div id="wb_Text12">
+                           <span style="color:#D3D3D3;font-family:'Fixedsys Excelsior';font-size:17px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES" target="_blank">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt" target="_blank">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon">
+         <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+   </div>
+</body>
+</html>

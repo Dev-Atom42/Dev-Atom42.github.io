@@ -5,29 +5,30 @@
 <title>Помощь разработчику</title>
 <meta name="description" content="Atom42 GAMES">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="a42ico.ico" rel="shortcut icon" type="image/x-icon">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/A42G.css" rel="stylesheet">
 <link href="css/helpme.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/skrollr.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/util.min.js"></script>
 <script src="js/collapse.min.js"></script>
 <script src="js/dropdown.min.js"></script>
-<script src="js/skrollr.min.js"></script>
 <script>   
    $(document).ready(function()
    {
-      $("a[href*='#LayoutGrid4']").click(function(event)
+      $("a[href*='#welcome']").click(function(event)
       {
          event.preventDefault();
-         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeOutCubic');
+         $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCubic');
       });
-      $("a[href*='#endp']").click(function(event)
+      function skrollrInit()
       {
-         event.preventDefault();
-         $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
-      });
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
       $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
       $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
       {
@@ -36,11 +37,6 @@
             $(this).collapse('hide');
          }
       });
-      function skrollrInit()
-      {
-         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
-      }
-      skrollrInit();
    });
 </script>
 <link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
@@ -66,27 +62,27 @@
                         <div class="navigationMenu-navbar-collapse collapse">
                            <ul class="nav navbar-nav">
                               <li class="nav-item">
-                                 <a href="./index.html" class="nav-link btn">Главная</a>
+                                 <a href="./index.html" title="Главная" class="nav-link btn">Главная</a>
                               </li>
                               <li class="nav-item dropdown">
                                  <div class="btn-group">
-                                    <a href="./games.html" title="Игры и приложения созданные Atom42" class="nav-link btn">Игры</a>
+                                    <a href="./games.html" title="Игры" class="nav-link btn">Игры</a>
                                     <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                        <li class="nav-item dropdown-item">
-                                          <a href="https://dev-atom42.github.io/Swisstale-TE-Lord-Nekit-Battle-DEMO/" class="nav-link">Swisstale TE (DEMO)</a>
+                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link">Swisstale TE (DEMO)</a>
                                        </li>
                                        <li class="nav-item dropdown-item">
-                                          <a href="https://dev-atom42.github.io/Flappy-Switz/" class="nav-link">Flappy Switz</a>
+                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link">Flappy Switz TE</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
                               <li class="nav-item">
-                                 <a href="./about.html" class="nav-link btn">О Atom42 GAMES</a>
+                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn">О Atom42 GAMES</a>
                               </li>
                               <li class="nav-item">
-                                 <a href="./helpme.html" class="nav-link btn">Помочь разработчику</a>
+                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn">Помочь разработчику</a>
                               </li>
                            </ul>
                         </div>
@@ -97,37 +93,38 @@
          </div>
       </div>
    </div>
-   <div id="wb_LayoutGrid4">
-      <div id="LayoutGrid4">
+   <div id="wb_welcome">
+      <div id="welcome">
          <div class="col-1">
             <div id="wb_Text8">
-               <span style="color:#FF0000;font-family:'Fixedsys Excelsior';font-size:53px;">Помочь разработчику</span>
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:43px;">Помочь разработчику</span>
             </div>
             <div id="wb_Text9">
-               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">в разработке<br></span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">в разработке</span>
+               <span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Atom42 GAMES нуждается в поддержке. Всем тем, чем я занимаюсь делаю по собственной инициативе. За любую помощь я буду очень признателен.</span>
+            </div>
+            <div id="wb_Text1">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:21px;">Чем вы можете помочь на данный момент:</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;"><br><br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Создание текстур</span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"> </span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">(на данный момент пиксельных для Swisstale TE)<br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Создание спрайтов</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;"> (на данный момент пиксельных для Swisstale TE)<br>(P.S. Из Atom42 художник так себе, поэтому если вы предложите свою помощь, то я буду очень благодарен, а вы тем самым поможете развиваться моим проектам дальше, а может и ускорите разработку. Вы как и положено попадёте в титры игры)<br><br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Создание саундтреков</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;"> (для Swisstale TE)<br>(В большей степени я либо пытаюсь что-то сделать сам, либо же начинаю использовать любительские саундтреки прочих людей с указанием на их авторство. Вы можете предложить свои саундтреки и вы так же попадёте в титры игры)<br><br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Предложение идей</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;"><br>(Да, вы можете предложить идеи для дальнейшего развития игры, если идея меня устроит и она подойдёт для игры, то я её постараюсь реализовать)<br><br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Поддержать разработчика материально</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;"> (на данный момент пока что этого сделать нельзя)<br>(Вы так же можете поддержать меня денежно. Полученные средства могут пойти на оборудование, лицензионное программное обеспечение, а так же на покушать разработчику. Все пожертвовавшие монету попадут в титры игры)<br><br>- </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:27px;">Рассказывать про Atom42 GAMES в соц. сетях, а так же своим друзьям, знакомым и т.д.</span><span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:24px;"><br></span>
+            </div>
+            <div id="wb_Text3">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:20px;">Если вы решили всё же помочь, то вы можете это сделать следующими способами:</span>
+            </div>
+            <div id="wb_ThemeableButton1" style="display:inline-block;width:100%;z-index:5;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton1" href="https://vk.com/Atom42_GAMES" target="_blank" style="width:100%;height:100%;">1. Написать в сообщения сообщества Atom42 GAMES<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_ThemeableButton2" style="display:inline-block;width:100%;z-index:6;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton2" href="mailto:wwwrrr11147@gmail.com" style="width:100%;height:100%;">2. Написать на почту<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_ThemeableButton3" style="display:inline-block;width:100%;z-index:7;">
+               <a class="ui-button ui-widget ui-corner-all" id="ThemeableButton3" href="https://discord.gg/VUmMdxt" target="_blank" style="width:100%;height:100%;">3. Написать мне в Discord сервере Atom42 GAMES<span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span></a>
+            </div>
+            <div id="wb_Text2">
+               <span style="color:#DCDCDC;font-family:'Fixedsys Excelsior';font-size:17px;">Желательно пользуйтесь первым способом, т.к. он самый удобный для меня и я там максимально быстро отвечаю. Запасным вариантом вы можете написать мне на почту. На крайний случай уже пишиште в Дискорд, либо <a href="https://vk.com/Atom42" target="_blank">в личные сообщения</a> ВК.<br><br>P.S. Если вы всё же очень хотите поддержать разработчика материально, не смотря на то что возможность материальной поддержки временно отсутствует, то вы так же можете связаться со мной по этому поводу.</span>
             </div>
          </div>
       </div>
    </div>
-   <div id="wb_endp">
-      <div id="endp">
-         <div class="row">
-            <div class="col-1">
-               <div id="wb_footer">
-                  <div id="footer">
-                     <div class="col-1">
-                        <div id="wb_footerText">
-                           <p style="font-size:13px;line-height:16px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:7;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
-      <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:5;">
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:11;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:9;">
          <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
    </div>
 </body>
