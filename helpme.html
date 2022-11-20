@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <title>Помощь разработчику</title>
-<meta name="description" content="Atom42 GAMES">
+<meta name="description" content="Помогите Atom42 GAMES!">
+<meta name="keywords" content="Пожертвование, Донат, Помощь разработчику, Создание текстур, Создание спрайтов, Создание саундтреков, Предложение идей, Игры, Swisstale TE, Симулятор жизни, Flappy Switz, Swisstale, Android, Undertale, Undertale AU, Андертейл, Свистейл, Приложения">
+<meta name="author" content="Atom42">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="a42ico.ico" rel="shortcut icon" type="image/x-icon">
 <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -40,10 +42,34 @@
    });
 </script>
 <link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script>   
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   
+      ym(91286557, "init", {
+           clickmap:true,
+           trackLinks:true,
+           accurateTrackBounce:true,
+           webvisor:true
+      });
+</script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91286557" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CY03GQB1JG"></script>
+<script>   
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+   
+     gtag('config', 'G-CY03GQB1JG');
+</script>
 </head>
 <body>
-   <div id="container">
-   </div>
    <div id="wb_navigation">
       <div id="navigation">
          <div class="row">
@@ -60,29 +86,29 @@
                            </button>
                         </div>
                         <div class="navigationMenu-navbar-collapse collapse">
-                           <ul class="nav navbar-nav">
-                              <li class="nav-item">
-                                 <a href="./index.html" title="Главная" class="nav-link btn">Главная</a>
+                           <ul class="nav navbar-nav" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./index.html" title="Главная" class="nav-link btn" itemprop="url">Главная</a>
                               </li>
-                              <li class="nav-item dropdown">
+                              <li itemprop="name" class="nav-item dropdown">
                                  <div class="btn-group">
-                                    <a href="./games.html" title="Игры" class="nav-link btn">Игры</a>
+                                    <a href="./games.html" title="Игры" class="nav-link btn" itemprop="url">Игры</a>
                                     <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                       <li class="nav-item dropdown-item">
-                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link">Swisstale TE (DEMO)</a>
+                                       <li itemprop="name" class="nav-item dropdown-item">
+                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link" itemprop="url">Swisstale TE (DEMO)</a>
                                        </li>
-                                       <li class="nav-item dropdown-item">
-                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link">Flappy Switz TE</a>
+                                       <li itemprop="name" class="nav-item dropdown-item">
+                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link" itemprop="url">Flappy Switz TE</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
-                              <li class="nav-item">
-                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn">О Atom42 GAMES</a>
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn" itemprop="url">О Atom42 GAMES</a>
                               </li>
-                              <li class="nav-item">
-                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn">Помочь разработчику</a>
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn" itemprop="url">Помочь разработчику</a>
                               </li>
                            </ul>
                         </div>
@@ -96,7 +122,7 @@
    <div id="wb_welcome">
       <div id="welcome">
          <div class="col-1">
-            <div id="wb_Text8">
+            <div id="wb_Text8" class="h1">
                <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:43px;">Помочь разработчику</span>
             </div>
             <div id="wb_Text9">
@@ -123,7 +149,7 @@
          </div>
       </div>
    </div>
-   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:11;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:12;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
       <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:9;">
          <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
    </div>

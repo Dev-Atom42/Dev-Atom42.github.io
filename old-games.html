@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Игры и приложения</title>
+<meta name="description" content="Игры и приложения от Atom42 GAMES.">
+<meta name="keywords" content="Игры, Swisstale TE, Симулятор жизни, Flappy Switz, Swisstale, Android, Undertale, Undertale AU, Андертейл, Свистейл, Приложения">
+<meta name="author" content="Atom42">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="a42ico.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/A42G.css" rel="stylesheet">
+<link href="css/old-games.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#welcome']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid7']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid3']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid2']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#endp']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+      $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+      $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
+      {
+         if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+         {
+            $(this).collapse('hide');
+         }
+      });
+   });
+</script>
+<link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script>   
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   
+      ym(91286557, "init", {
+           clickmap:true,
+           trackLinks:true,
+           accurateTrackBounce:true,
+           webvisor:true
+      });
+</script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91286557" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CY03GQB1JG"></script>
+<script>   
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+   
+     gtag('config', 'G-CY03GQB1JG');
+</script>
+</head>
+<body>
+   <div id="wb_navigation">
+      <div id="navigation">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_navigationMenu" style="display:inline-block;width:100%;text-align:center;z-index:0;">
+                  <div id="navigationMenu" class="navigationMenu" style="width:100%;height:auto !important;">
+                     <div class="container">
+                        <a id="navigationMenu-logo" href="#"><img alt="Atom42 GAMES" title="Atom42 GAMES" src="images/Atom42_GAMES_RU.png" width="224" height="41"></a>
+                        <div class="navbar-header">
+                           <button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigationMenu-navbar-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                           </button>
+                        </div>
+                        <div class="navigationMenu-navbar-collapse collapse">
+                           <ul class="nav navbar-nav" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./index.html" title="Главная" class="nav-link btn" itemprop="url">Главная</a>
+                              </li>
+                              <li itemprop="name" class="nav-item dropdown">
+                                 <div class="btn-group">
+                                    <a href="./games.html" title="Игры" class="nav-link btn" itemprop="url">Игры</a>
+                                    <a href="#" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                       <li itemprop="name" class="nav-item dropdown-item">
+                                          <a href="./swisstale-te.html" title="Swisstale TE (DEMO)" class="nav-link" itemprop="url">Swisstale TE (DEMO)</a>
+                                       </li>
+                                       <li itemprop="name" class="nav-item dropdown-item">
+                                          <a href="./flappy-switz-te.html" title="Flappy Switz TE" class="nav-link" itemprop="url">Flappy Switz TE</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </li>
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./about.html" title="О Atom42 GAMES" class="nav-link btn" itemprop="url">О Atom42 GAMES</a>
+                              </li>
+                              <li itemprop="name" class="nav-item">
+                                 <a href="./helpme.html" title="Помочь разработчику" class="nav-link btn" itemprop="url">Помочь разработчику</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_welcome">
+      <div id="welcome">
+         <div class="col-1">
+            <div id="wb_Text3">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:53px;">Раннее творчество </span><span style="color:#FF4500;font-family:'Fixedsys Excelsior';font-size:53px;">Atom42</span>
+            </div>
+            <div id="wb_Text13">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">На данной странице находятся заброшенные восстановленные проекты, над которым когда-то я работал. От этих приложений и игр особо смысла нет, они просто являются частью истории моего развития. На данной странице вы можете загрузить мои приложения и игры, если же вы хотите почитать о моём раннем творчестве, то нажмите <a href="./about.html#FlexContainer4">сюда</a>.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer2">
+      <div id="wb_Text2" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Мобильные игры и приложения</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid7">
+      <div id="LayoutGrid7">
+         <div class="col-1">
+            <div id="wb_Text14">
+               <span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:29px;">Предупреждение</span><span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:35px;">!</span>
+            </div>
+            <div id="wb_Text15">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Ниже представлен список игр и приложений из моего раннего творчества.<br>Список поделён на 2 части. В этих списках находятся все восстановленные, найденные приложения, причём они не все идут с описанием, по причине того, что я не помню за что отвечает каждое приложение. В одной части находятся относительно адекватные приложения, а в другой части могут находится очень упоротые и трэшовые приложения, за которые мне стыдно. </span><span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:17px;">Особенно стоит быть осторожным с играми про Швейцария, в этих играх находится много 18+ контента </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">(благо что не картинками и видео), поэтому скачивая игры из этого списка </span><span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:17px;">вы действуете на свой страх и риск</span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">! Так же, я выложил исходники этих игр и приложений на своей <a href="https://github.com/Dev-Atom42/old-archived-projects">странице GitHub</a>.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid1">
+      <div id="LayoutGrid1">
+         <div class="col-1">
+            <div id="wb_Text10">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Список с </span><span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:32px;">более-менее адекватными </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">приложениями:</span>
+            </div>
+            <div id="wb_Text20">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Andwin_1.0.apk">Andwin_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Симулятор некой операционной системы.</span>
+            </div>
+            <div id="wb_Text21">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/ATEST_1.0.apk">ATEST_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text22">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/ChatBotBuilder_1.0.apk">ChatBotBuilder_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text23">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Die_Fight_1.0.apk">Die_Fight_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Квест игра про 3-ю мировую войну. Вы играете в роли солдата королевства Швейцария. Игра не закончена.</span>
+            </div>
+            <div id="wb_Text24">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Flappy_Switz_Installer_1.0.apk">Flappy_Switz_Installer_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Не понимаю и для чего я это делал...</span>
+            </div>
+            <div id="wb_Text25">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Generator_1.6.apk">Generator_1.6.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Генератор случайных чисел, букв, паролей.</span>
+            </div>
+            <div id="wb_Text26">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/ReysMarket_1.0.apk">ReysMarket_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text27">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Sbot_1.0.apk">Sbot_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text28">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/sketchware_noob_tutorial_1.0.apk">sketchware_noob_tutorial_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text29">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/Switzer_Simulator.apk">Switzer_Simulator.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Игра-симулятор.</span>
+            </div>
+            <div id="wb_Text30">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/test_1.0.apk">test_1.0.apk</a></span>
+            </div>
+            <div id="wb_Text31">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/normal/WikiDemoApp_1.0.apk">WikiDemoApp_1.0.apk</a></span>
+            </div>
+         </div>
+         <div class="col-2">
+            <div id="wb_Text4">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Список с </span><span style="color:#FFA500;font-family:'Fixedsys Excelsior';font-size:32px;">неадекватными</span><span style="color:#FFD700;font-family:'Fixedsys Excelsior';font-size:32px;"> </span><span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">приложениями:</span>
+            </div>
+            <div id="wb_Text11">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/cringel/King_of_Switzerland_Adventures_2_2.1.apk">King_of_Switzerland_Adventures_2_2.1.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Квест игра про похождения короля швейцария во время войны между королевством Швейцария и королевством Лорда Некита. К сожалению первая часть игры утеряна.</span>
+            </div>
+            <div id="wb_Text16">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/cringe/King_of_Switzerland_quest_1.0.apk">King_of_Switzerland_quest_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Квест игра про различные сюжетные обстановки со Швейцарием. Игра не закончена.</span>
+            </div>
+            <div id="wb_Text17">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/cringe/School_Enjoy_1.0.apk">School_Enjoy_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Квест игра про один школьный день будущего короля Швейцария.</span>
+            </div>
+            <div id="wb_Text18">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/cringe/Swiss-Generator_1.0.apk">Swiss-Generator_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Приложение, которое генерирует различные фразы.</span>
+            </div>
+            <div id="wb_Text19">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;"><a href="old_projects/cringel/Switzer_Test_1.0.apk">Switzer_Test_1.0.apk</a><br></span><span style="color:#A9A9A9;font-family:'Fixedsys Excelsior';font-size:17px;">Тест на Швейцария. Пройдя тест в процентах определяется ваш уровень склонности к той или иной ориентации.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer1">
+      <div id="wb_Text1" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Модификации и прочая всячина к игре Minecraft</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3">
+         <div class="col-1">
+            <div id="wb_Text5">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">На данный момент список пуст</span>
+            </div>
+            <div id="wb_Text7">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Возможно дело в том, что данные утеряны :(</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer3">
+      <div id="wb_Text6" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Прочее</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2">
+         <div class="col-1">
+            <div id="wb_Text8">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:29px;">На данный момент список пуст</span>
+            </div>
+            <div id="wb_Text9">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Возможно дело в том, что данные утеряны :(</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_endp">
+      <div id="endp">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_footer">
+                  <div id="footer">
+                     <div class="col-1">
+                        <div id="wb_Text12">
+                           <span style="color:#D3D3D3;font-family:'Fixedsys Excelsior';font-size:17px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES" target="_blank">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt" target="_blank">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:45;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:33;">
+         <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+   </div>
+
+</body>
+</html>

@@ -1,24 +1,17 @@
-div#container
-{
-   width: 970px;
-   position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
-}
 body
 {
-   color: #000000;
+   color: #FFFFFF;
    font-family: "Fixedsys Excelsior";
    font-weight: normal;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
+   padding: 0;
 }
 body:after
 {
    background-color: #000000;
-   background-image: url('../images/aesthetic-dark-wallpaper-background-neon-light.png');
+   background-image: url('../images/a42g1_back.png');
    background-position: center center;
    background-repeat: repeat;
    background-size: cover;
@@ -32,20 +25,12 @@ body:after
 }
 a
 {
-   color: #0000FF;
+   color: #87CEEB;
    text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
 }
 a:hover
 {
-   color: #0000FF;
+   color: #FFFF00;
    text-decoration: underline;
 }
 input:focus, textarea:focus, select:focus
@@ -133,7 +118,7 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-image: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(75,75,75,0.78) 100%);
+   background-image: linear-gradient(to top, rgba(0,0,0,0.67) 0%, rgba(75,75,75,0.63) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -214,7 +199,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(50,34,177,0.78) 0%, rgba(33,22,160,0.78) 50%, rgba(2,1,130,0.78) 50%, rgba(40,27,167,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(50,34,177,0.71) 0%, rgba(33,22,160,0.71) 50%, rgba(2,1,130,0.71) 50%, rgba(40,27,167,0.71) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -309,7 +294,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(50,34,177,0.78) 0%, rgba(33,22,160,0.78) 50%, rgba(2,1,130,0.78) 50%, rgba(40,27,167,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(50,34,177,0.71) 0%, rgba(33,22,160,0.71) 50%, rgba(2,1,130,0.71) 50%, rgba(40,27,167,0.71) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -404,7 +389,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(50,34,177,0.78) 0%, rgba(33,22,160,0.78) 50%, rgba(2,1,130,0.78) 50%, rgba(40,27,167,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(50,34,177,0.71) 0%, rgba(33,22,160,0.71) 50%, rgba(2,1,130,0.71) 50%, rgba(40,27,167,0.71) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -499,7 +484,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(50,34,177,0.78) 0%, rgba(33,22,160,0.78) 50%, rgba(2,1,130,0.78) 50%, rgba(40,27,167,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(50,34,177,0.71) 0%, rgba(33,22,160,0.71) 50%, rgba(2,1,130,0.71) 50%, rgba(40,27,167,0.71) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -594,7 +579,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(50,34,177,0.78) 0%, rgba(33,22,160,0.78) 50%, rgba(2,1,130,0.78) 50%, rgba(40,27,167,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(50,34,177,0.71) 0%, rgba(33,22,160,0.71) 50%, rgba(2,1,130,0.71) 50%, rgba(40,27,167,0.71) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -616,7 +601,7 @@ input:focus, textarea:focus, select:focus
    -webkit-align-content: flex-start;
    align-content: flex-start;
    margin: 0;
-   background-image: linear-gradient(to bottom, rgba(29,29,29,0.78) 0%, rgba(19,19,19,0.78) 50%, rgba(1,1,1,0.78) 50%, rgba(23,23,23,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(29,29,29,0.67) 0%, rgba(19,19,19,0.67) 50%, rgba(1,1,1,0.67) 50%, rgba(23,23,23,0.67) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    font-size: 0;
@@ -629,7 +614,7 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-image: linear-gradient(to bottom, rgba(52,52,52,0.78) 0%, rgba(2,2,2,0.78) 25%, rgba(52,52,52,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(52,52,52,0.67) 0%, rgba(2,2,2,0.67) 25%, rgba(52,52,52,0.67) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -701,7 +686,7 @@ input:focus, textarea:focus, select:focus
    display: none;
    text-align: center;
    width: 100%;
-   background-image: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(75,75,75,0.78) 100%);
+   background-image: linear-gradient(to top, rgba(0,0,0,0.67) 0%, rgba(75,75,75,0.63) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -1269,7 +1254,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .dropdown-menu>li>a:focus 
 {
    text-decoration: none;
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -1277,7 +1262,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .dropdown-menu>li>a.active:hover,
 .navigationMenu .dropdown-menu>li>a.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
    text-decoration: none;
@@ -1421,14 +1406,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
    text-decoration: none;
 }
 .navigationMenu .navbar-nav .btn.active,
 .navigationMenu .navbar-nav .btn.active:hover,
 .navigationMenu .navbar-nav .btn.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -1452,8 +1437,8 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover .caret,
 .navigationMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn:not(:first-child),
 .navigationMenu .btn-group.show .btn:not(:first-child):hover,
@@ -1461,14 +1446,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn .caret,
 .navigationMenu .btn-group.show .btn:hover .caret,
 .navigationMenu .btn-group.show .btn:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn .caret
 {
@@ -1481,7 +1466,7 @@ input:focus, textarea:focus, select:focus
 }
 .navigationMenu .navbar-link:hover
 {
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .navbar-header
 {
@@ -1537,8 +1522,8 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover .caret,
 .navigationMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 }
 @media (max-width: 640px) 
@@ -1592,7 +1577,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover,
 .navigationMenu .navbar-nav .btn:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -1600,7 +1585,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn.active:hover,
 .navigationMenu .navbar-nav .btn.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -1610,12 +1595,12 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn:hover .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn .caret
 {
@@ -1626,15 +1611,15 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav > li > a.active:hover > .caret,
 .navigationMenu .navbar-nav > li > a.active:focus > .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn .caret,
 .navigationMenu .btn-group.show .btn:hover .caret,
 .navigationMenu .btn-group.show .btn:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-link
 {
@@ -1768,7 +1753,7 @@ input:focus, textarea:focus, select:focus
    bottom: 25px;
    width: 50px;
    height: 50px;
-   z-index: 20;
+   z-index: 34;
    z-index: 99999;
 }
 #wb_YouTube1
@@ -1786,14 +1771,10 @@ input:focus, textarea:focus, select:focus
 }
 @media only screen and (max-width: 640px)
 {
-div#container
-{
-   width: 636px;
-}
 body
 {
    background-color: #000000;
-   background-image: url('../images/aesthetic-dark-wallpaper-background-neon-light.png');
+   background-image: url('../images/a42g_back.png');
    background-attachment: fixed;
    background-position: center center;
    background-repeat: repeat;
@@ -2167,7 +2148,7 @@ body
 {
    visibility: visible;
    display: table;
-   background-image: linear-gradient(to bottom, rgba(29,29,29,0.78) 0%, rgba(19,19,19,0.78) 50%, rgba(1,1,1,0.78) 50%, rgba(23,23,23,0.78) 100%);
+   background-image: linear-gradient(to bottom, rgba(29,29,29,0.67) 0%, rgba(19,19,19,0.67) 50%, rgba(1,1,1,0.67) 50%, rgba(23,23,23,0.67) 100%);
 }
 #wb_LayoutGrid2
 {

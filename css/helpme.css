@@ -1,24 +1,17 @@
-div#container
-{
-   width: 970px;
-   position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
-}
 body
 {
-   color: #000000;
+   color: #FFFFFF;
    font-family: "Fixedsys Excelsior";
    font-weight: normal;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
+   padding: 0;
 }
 body:after
 {
    background-color: #000000;
-   background-image: url('../images/aesthetic-dark-wallpaper-background-neon-light.png');
+   background-image: url('../images/a42g1_back.png');
    background-position: center center;
    background-repeat: repeat;
    background-size: cover;
@@ -32,20 +25,12 @@ body:after
 }
 a
 {
-   color: #0000FF;
+   color: #87CEEB;
    text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
 }
 a:hover
 {
-   color: #0000FF;
+   color: #FFFF00;
    text-decoration: underline;
 }
 input:focus, textarea:focus, select:focus
@@ -133,7 +118,7 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-image: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(75,75,75,0.78) 100%);
+   background-image: linear-gradient(to top, rgba(0,0,0,0.67) 0%, rgba(75,75,75,0.63) 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -231,16 +216,6 @@ input:focus, textarea:focus, select:focus
 #upIcon:hover i
 {
    color: #FFD700;
-}
-#wb_Text8 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
 }
 #wb_Text8 div
 {
@@ -414,7 +389,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .dropdown-menu>li>a:focus 
 {
    text-decoration: none;
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -422,7 +397,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .dropdown-menu>li>a.active:hover,
 .navigationMenu .dropdown-menu>li>a.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
    text-decoration: none;
@@ -566,14 +541,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
    text-decoration: none;
 }
 .navigationMenu .navbar-nav .btn.active,
 .navigationMenu .navbar-nav .btn.active:hover,
 .navigationMenu .navbar-nav .btn.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -597,8 +572,8 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover .caret,
 .navigationMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn:not(:first-child),
 .navigationMenu .btn-group.show .btn:not(:first-child):hover,
@@ -606,14 +581,14 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn .caret,
 .navigationMenu .btn-group.show .btn:hover .caret,
 .navigationMenu .btn-group.show .btn:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn .caret
 {
@@ -626,7 +601,7 @@ input:focus, textarea:focus, select:focus
 }
 .navigationMenu .navbar-link:hover
 {
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .navbar-header
 {
@@ -682,8 +657,8 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover .caret,
 .navigationMenu .navbar-nav>.dropdown>a:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 }
 @media (max-width: 640px) 
@@ -737,7 +712,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn:hover,
 .navigationMenu .navbar-nav .btn:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -745,7 +720,7 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav .btn.active:hover,
 .navigationMenu .navbar-nav .btn.active:focus
 {
-   color: #00BFFF;
+   color: #FFFF00;
    background-color: rgba(52,58,64,0.59);
    background-image: none;
 }
@@ -755,12 +730,12 @@ input:focus, textarea:focus, select:focus
 {
    background-color: rgba(52,58,64,0.59);
    background-image: none;
-   color: #00BFFF;
+   color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn:hover .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-nav .btn .caret
 {
@@ -771,15 +746,15 @@ input:focus, textarea:focus, select:focus
 .navigationMenu .navbar-nav > li > a.active:hover > .caret,
 .navigationMenu .navbar-nav > li > a.active:focus > .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .btn-group.show .btn .caret,
 .navigationMenu .btn-group.show .btn:hover .caret,
 .navigationMenu .btn-group.show .btn:focus .caret
 {
-   border-top-color: #00BFFF;
-   border-bottom-color: #00BFFF;
+   border-top-color: #FFFF00;
+   border-bottom-color: #FFFF00;
 }
 .navigationMenu .navbar-link
 {
@@ -997,7 +972,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton1:hover .ui-primary
 {
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton1:active .ui-primary
 {
@@ -1022,10 +997,10 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton1 .ui-state-hover, #wb_ThemeableButton1 .ui-button:hover
 {
-   border-color: #000000;
+   border-color: #FFFF00;
    background-color: #000000;
    background-image: none;
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton1 .ui-state-active, #wb_ThemeableButton1 .ui-button:active
 {
@@ -1103,7 +1078,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton2:hover .ui-primary
 {
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton2:active .ui-primary
 {
@@ -1128,10 +1103,10 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton2 .ui-state-hover, #wb_ThemeableButton2 .ui-button:hover
 {
-   border-color: #000000;
+   border-color: #FFFF00;
    background-color: #000000;
    background-image: none;
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton2 .ui-state-active, #wb_ThemeableButton2 .ui-button:active
 {
@@ -1209,7 +1184,7 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton3:hover .ui-primary
 {
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton3:active .ui-primary
 {
@@ -1234,10 +1209,10 @@ input:focus, textarea:focus, select:focus
 }
 #wb_ThemeableButton3 .ui-state-hover, #wb_ThemeableButton3 .ui-button:hover
 {
-   border-color: #000000;
+   border-color: #FFFF00;
    background-color: #000000;
    background-image: none;
-   color: #F5F5F5;
+   color: #FFFF00;
 }
 #wb_ThemeableButton3 .ui-state-active, #wb_ThemeableButton3 .ui-button:active
 {

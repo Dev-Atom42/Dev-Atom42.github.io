@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Atom42-GAMES.ru/sitemap.xml
