@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Игры и приложения</title>
+<meta name="description" content="Игры и приложения от Atom42 GAMES.">
+<meta name="keywords" content="Игры, Swisstale TE, Симулятор жизни, Flappy Switz, Swisstale, Android, Undertale, Undertale AU, Андертейл, Свистейл, Приложения">
+<meta name="author" content="Atom42">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="a42ico.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/stufftest.css" rel="stylesheet">
+<link href="css/old-games.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#welcome']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid7']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#LayoutGrid2']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeOutCubic');
+      });
+      $("a[href*='#endp']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_endp').offset().top }, 600, 'easeOutCubic');
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+   });
+</script>
+<link href="css/Fixedsys_Excelsior.css" rel="stylesheet">
+<!-- Yandex.Metrika counter -->
+<script>   
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   
+      ym(91286557, "init", {
+           clickmap:true,
+           trackLinks:true,
+           accurateTrackBounce:true,
+           webvisor:true
+      });
+</script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/91286557" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CY03GQB1JG"></script>
+<script>   
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+   
+     gtag('config', 'G-CY03GQB1JG');
+</script>
+</head>
+<body>
+   <div id="wb_welcome">
+      <div id="welcome">
+         <div class="col-1">
+            <div id="wb_Text3">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:53px;">Всякие штуки</span>
+            </div>
+            <div id="wb_Text13">
+               <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:17px;">Пока что просто тест страничка</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer2">
+      <div id="wb_Text2" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Калькулятор квадратных уравнений (работает очень коряво)</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid7">
+      <div id="LayoutGrid7">
+         <div class="col-1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- Enables full-screen on iOS devices -->
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <title>Clickteam Fusion Developer 2.5+ HTML5 Runtime</title>
+	<script>            
+            	   	// Detection of old browsers that do not support the canvas element
+            		// Falls back to a default page
+            	    if (!document.createElement("canvas").getContext)
+            	    {
+            			window.open("http://www.clickteam.com/html5-fallback", "_self");
+            		}
+            	
+</script>
+
+  	<!-- EXTRASOURCES -->
+    <!-- Loads the Javascript code...-->
+    <script src="useless_x2math/Runtime.js"></script>
+  <script>            
+            
+            	// Detection of when the html file is ran locally.
+            	// You can remove this code for the final version
+            	if (window.location.protocol == "file:")
+            	{
+            		document.write('<div id="bloctxt">');
+            		document.write('<h1>The application cannot be run...</h1>');
+            		document.write('<p>HTML browsers do not allow you to launch data files directly from the file system.<br>');
+            		document.write('A drag & drop of the html file on a web-browser window will not work, on any machine.<br>');
+            		document.write('Please use the Build & Run option (it opens a local web server) to run your application,<br>')
+            		document.write('or upload your application folder to a remote web-server, and start it from there...</p>');
+            		document.write('</div>');
+            		throw new error("Cannot run application");
+            	}
+              
+</script>
+</head>
+<body>
+            <div style="display:inline-block; -webkit-user-select:none; text-align:left;">
+               <canvas id="MMFCanvas" width="500" height="300">
+    	Your browser does not support Canvas.
+               </canvas>
+            </div>
+            <script>            
+                // RUNTIMESTART
+                // This is where the HTML5 runtime is actually started
+                window.addEventListener("load", windowLoaded, false);
+                function windowLoaded()
+                {
+                    // Calls the runtime
+                    // First parameter : name of the canvas element
+                    // Second parameter : path to the cch file. Images and sounds must lay beside this file
+                    new Runtime("MMFCanvas", "useless_x2math/Calc.cch");
+                }
+                // RUNTIMESTARTEND
+            </script>
+</body>
+</html>
+         </div>
+      </div>
+   </div>
+   <div id="FlexContainer3">
+      <div id="wb_Text6" class="style1">
+         <span style="color:#FFFFFF;font-family:'Fixedsys Excelsior';font-size:32px;">Часы в формате 16 часов = 1 день</span>
+      </div>
+   </div>
+   <div id="wb_LayoutGrid2">
+      <div id="LayoutGrid2">
+         <div class="col-1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- Enables full-screen on iOS devices -->
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <title>Clickteam Fusion Developer 2.5+ HTML5 Runtime</title>
+	<script>            
+            	   	// Detection of old browsers that do not support the canvas element
+            		// Falls back to a default page
+            	    if (!document.createElement("canvas").getContext)
+            	    {
+            			window.open("http://www.clickteam.com/html5-fallback", "_self");
+            		}
+            	
+</script>
+
+  	<!-- EXTRASOURCES -->
+    <!-- Loads the Javascript code...-->
+    <script src="useless_clock/Runtime.js"></script>
+  <script>            
+            
+            	// Detection of when the html file is ran locally.
+            	// You can remove this code for the final version
+            	if (window.location.protocol == "file:")
+            	{
+            		document.write('<div id="bloctxt">');
+            		document.write('<h1>The application cannot be run...</h1>');
+            		document.write('<p>HTML browsers do not allow you to launch data files directly from the file system.<br>');
+            		document.write('A drag & drop of the html file on a web-browser window will not work, on any machine.<br>');
+            		document.write('Please use the Build & Run option (it opens a local web server) to run your application,<br>')
+            		document.write('or upload your application folder to a remote web-server, and start it from there...</p>');
+            		document.write('</div>');
+            		throw new error("Cannot run application");
+            	}
+              
+</script>
+</head>
+<body>
+            <div style="display:inline-block; -webkit-user-select:none; text-align:left;">
+               <canvas id="MMFCanvas" width="960" height="480">
+    	Your browser does not support Canvas.
+               </canvas>
+            </div>
+            <script>            
+                // RUNTIMESTART
+                // This is where the HTML5 runtime is actually started
+                window.addEventListener("load", windowLoaded, false);
+                function windowLoaded()
+                {
+                    // Calls the runtime
+                    // First parameter : name of the canvas element
+                    // Second parameter : path to the cch file. Images and sounds must lay beside this file
+                    new Runtime("MMFCanvas", "useless_clock/Ruskey_Clock.cch");
+                }
+                // RUNTIMESTARTEND
+            </script>
+</body>
+</html>
+         </div>
+      </div>
+   </div>
+   <div id="wb_endp">
+      <div id="endp">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_footer">
+                  <div id="footer">
+                     <div class="col-1">
+                        <div id="wb_Text12">
+                           <span style="color:#D3D3D3;font-family:'Fixedsys Excelsior';font-size:17px;">Связаться со мной можно в <a href="https://vk.com/Atom42_GAMES" target="_blank">ВКонтакте</a>, <a href="https://discord.gg/VUmMdxt" target="_blank">Discord</a> сервере, а так же по <a href="mailto:wwwrrr11147@gmail.com">эл. почте</a>.</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:16;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:8;">
+         <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+   </div>
+
+</body>
+</html>
